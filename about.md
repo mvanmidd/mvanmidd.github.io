@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Setting up Jekyll.
+A project page; currently lonely.

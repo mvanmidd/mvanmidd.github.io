@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "COVID-19 Plots 2020-03-29 (Plus project updates)"
+date:   2020-03-29
+---
+
+Updates: Refactored to use https://coronadatascraper.com/#home , just in time for them to 
+encounter a data fusion bug that wiped out their deaths counts for most states. 
+It seems like they are focusing on building data fusion infrastructure for the long term,
+which is great, but they're not treating this like a fire and it might not get fixed
+today.
+
+In the mean time, even the coronadatascraper.com folks are recommending that people use
+https://covidtracking.com/api/ for US data. CDS.com seems to still be OK for international.
+
+I'm not looking forward to yet another data source swap (this would be data source #4).
+Hopefully the CDS.com folks get it together.
+
+Another option is the NYT data: https://github.com/nytimes/covid-19-data/commits/master. 
+However, they haven't committed to a predictable update frequency
+ ([I asked](https://github.com/nytimes/covid-19-data/issues/41)). They seem to be publishing
+ daily, so if that keeps up, maybe I'll switch.
+ 
+ In the mean time, today's graphs are a little wonky. 
+
+[Latest Jupyter Notebook](https://github.com/mvanmidd/covid/blob/master/covid_plots.ipynb)
+
+
+### state_cases_per_100k
+
+{% include 2020-03-30-state_cases_per_100k.html %}
+
+### state_cases
+
+{% include 2020-03-30-state_cases.html %}
+
+### state_new_cases
+
+{% include 2020-03-30-state_new_cases.html %}
+
+### state_deaths
+
+{% include 2020-03-30-state_deaths.html %}
+
+### world_cases_per_100k
+
+{% include 2020-03-30-world_cases_per_100k.html %}
+
+### world_cases
+
+{% include 2020-03-30-world_cases.html %}
+
+### world_new_cases
+
+{% include 2020-03-30-world_new_cases.html %}
+
+### world_deaths
+
+{% include 2020-03-30-world_deaths.html %}
+
